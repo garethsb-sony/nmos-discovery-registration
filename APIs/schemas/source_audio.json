@@ -9,6 +9,7 @@
       "type": "object",
       "required": [
         "format",
+        "grain_rate",
         "channels"
       ],
       "properties": {

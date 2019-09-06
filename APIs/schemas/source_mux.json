@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes a mux Source",
+  "title": "Mux Source resource",
+  "allOf": [
+    { "$ref": "source_core.json" },
+    {
+      "type": "object",
+      "required": [
+        "format",
+        "grain_rate"
+      ],
+      "properties": {
+        "format": {
+          "description": "Format of the data coming from the Source as a URN",
+          "type": "string",
+          "enum": [
+            "urn:x-nmos:format:mux"
+          ],
+          "format": "uri"
+        }
+      }
+    }
+  ]
+}
