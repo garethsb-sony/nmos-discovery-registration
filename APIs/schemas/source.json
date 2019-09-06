@@ -4,8 +4,9 @@
   "description": "Describes a Source",
   "title": "Source resource",
   "oneOf": [
-    { "$ref": "source_generic.json" },
+    { "$ref": "source_video.json" },
     { "$ref": "source_audio.json" },
-    { "$ref": "source_data.json" }
+    { "$ref": "source_data.json" },
+    { "$ref": "source_mux.json" }
   ]
 }
